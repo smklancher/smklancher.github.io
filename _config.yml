@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+# Ignore repo files
+exclude:
+- README.md
