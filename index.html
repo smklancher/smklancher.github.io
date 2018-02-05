@@ -24,7 +24,7 @@ description: an Open Source Portfolio Using GitHub Pages
             <svg class="icon">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ repo.language | downcase }}"></use>
             </svg>
-            <h3><a href="{{ repo.url }}">{{ repo.name }}</a></h3>
+            <h3><a href="{{ repo.html_url }}">{{ repo.name }}</a></h3>
             <p>{{ repo.description }}</p>
             <a class="button" href="{{ repo.html_url }}/archive/{{ repo.default_branch }}.zip"><svg class="icon  icon--sub"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#down"></use></svg> Download</a>
             <a class="button" href="{{ repo.html_url }}"><svg class="icon  icon--sub"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#octocat"></use></svg> Fork it</a>
