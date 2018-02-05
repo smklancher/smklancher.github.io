@@ -14,8 +14,9 @@ description: an Open Source Portfolio Using GitHub Pages
     {% include icons.svg %}
     <header class="header">
       <h1>{{ page.title }}</h1>
-      <a href="https://github.com/smklancher">GitHub Profile</a> - <a href="http://projects.stephenklancher.com/">Older Projects</a>>
     </header>
+
+    <div class="header"><a href="https://github.com/smklancher">GitHub Profile</a> - <a href="http://projects.stephenklancher.com/">Older Projects</a></div>
 
     <ul class="portfolio">
       {% for repo in site.github.public_repositories | sort: 'updated_at' reversed %}
