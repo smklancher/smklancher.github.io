@@ -14,11 +14,11 @@ description: an Open Source Portfolio Using GitHub Pages
     {% include icons.svg %}
     <header class="header">
       <h1>{{ page.title }}</h1>
-      <!-- <h2>{{ page.description }}</h2> -->
+      <a href="https://github.com/smklancher">GitHub Profile</a> - <a href="http://projects.stephenklancher.com/">Older Projects</a>>
     </header>
 
     <ul class="portfolio">
-      {% for repo in site.github.public_repositories limit:28 %}
+      {% for repo in site.github.public_repositories | sort: 'updated_at' reversed %}
         {% if repo.fork != true %}
           <li class="repo  repo--{{ repo.language | downcase }}">
             <svg class="icon">
